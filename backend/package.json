@@ -1,0 +1,18 @@
+{
+  "name": "amazona",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saifmoh7/amazona-test/issues"
+  },
+  "homepage": "https://github.com/saifmoh7/amazona-test#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
