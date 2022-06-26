@@ -1,13 +1,19 @@
 const express = require("express")
 const mongoose = require("mongoose")
 const cors = require("cors")
+const dotenv = require("dotenv")
 
 // const data = require("./data");
 const userRouter = require("./routers/userRouter.js");
 const productRouter = require("./routers/productRouter.js");
 
+dotenv.config();
+
 const app = express()
 const port = 5000;
+
+app.use(express.json());
+app.use(express.urlencoded({extended: true}))
 
 mongoose.connect('mongodb://localhost/amazona', {
     useNewUrlParser: true,
